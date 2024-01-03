@@ -15,7 +15,7 @@ int get_height(const binary_tree_t *tree)
 	h_left = tree->left ? 1 + get_height(tree->left) : 0;
 	h_right = tree->right ? 1 + get_height(tree->right) : 0;
 
-	return((h_left > h_right) ? h_left : h_right);
+	return ((h_left > h_right) ? h_left : h_right);
 }
 
 /**
@@ -30,5 +30,5 @@ int binary_tree_balance(const binary_tree_t *tree)
 	h_left = get_height(tree->left);
 	h_right = get_height(tree->right);
 	printf("%d : %d\n", h_left, h_right);
-	return(h_left - h_right);
+	return (h_left - h_right);
 }
