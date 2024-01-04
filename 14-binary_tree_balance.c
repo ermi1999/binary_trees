@@ -3,7 +3,7 @@
 /**
  * get_height - gets the height of a binary tree node.
  * @tree: pointer to the root node.
- * @Return: the height of the node.
+ * Return: the height of the node.
  */
 int get_height(const binary_tree_t *tree)
 {
@@ -27,6 +27,9 @@ int get_height(const binary_tree_t *tree)
 int binary_tree_balance(const binary_tree_t *tree)
 {
 	int h_left, h_right;
+
+	if (tree == NULL)
+		return (0);
 
 	h_left = get_height(tree->left);
 	h_right = get_height(tree->right);
