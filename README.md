@@ -1,5 +1,4 @@
 # Binary Trees
-
 - This repository contains functions that will do some operations on binary tree.
 
 - each main ``tests`` folder contains the test files for each function you can find the test you are looking for by comparing the function number and the test number.
